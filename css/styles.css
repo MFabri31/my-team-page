@@ -1,0 +1,53 @@
+:root{
+    --bg-light:#fff;
+    --bg-dark:#000;
+}
+
+
+/* --------------------
+         BASE
+----------------------*/
+
+html {
+    box-sizing: border-box;
+}
+  
+*, 
+*:before, 
+*:after {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 1.2rem;
+}
+
+
+h1,h2,h3,h4,h4,h6{
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+
+
+/* --------------------
+        LAYOUT
+----------------------*/
+.container{
+    max-width: 1200px;
+    margin-right: auto;
+    margin-right: auto;
+}
