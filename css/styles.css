@@ -1,5 +1,6 @@
 :root {
   --bg-light: #fff;
+  --bg-light-2: #a9a9a9;
   --bg-dark: #000;
 }
 
@@ -20,16 +21,7 @@ html {
 }
 
 body {
-  font-size: 1.2rem;
-}
-
-h1,
-h2,
-h3,
-h4,
-h4,
-h6 {
-  margin: 0;
+  font-size: 16px;
 }
 
 li {
@@ -44,8 +36,46 @@ img {
   max-width: 100%;
 }
 
+/* -----------------
+  OUR TEAM SECTION
+-------------------*/
+
 .our-team {
-  padding: 0.5em;
+  padding: 1em;
+}
+
+.our-team-content {
+  margin: 3rem 0;
+}
+
+.our-team-content__texts {
+  font-family: sans-serif;
+}
+
+.our-team-content__title {
+  margin-bottom: 2rem;
+  margin: 0;
+}
+
+.our-team-content__subtitle {
+  margin-bottom: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.our-team-content__paragraph {
+  line-height: 1.5;
+}
+
+@media screen and (min-width: 768px) {
+  .our-team-content {
+    display: flex;
+    justify-content: space-between;
+  }
+  .our-team-content__texts {
+    width: 45%;
+  }
 }
 
 .our-team__title,
@@ -57,36 +87,59 @@ img {
   margin-bottom: 1rem;
 }
 
-.our-team-cards {
+/* -----------------
+        CARDS
+-------------------*/
+.cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem;
   padding: 0.5em;
+  font-family: sans-serif;
 }
 
-.our-team-cards figure:nth-child(even) {
+@media screen and (min-width: 768px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.cards figure:nth-child(even) {
   margin-top: 2rem;
 }
 
-.our-team-cards__main-description {
+.card__main-content {
   display: flex;
 }
 
-.our-team-cards__description {
+.card__description {
   margin-left: 0.3rem;
   font-size: 0.9rem;
   writing-mode: vertical-lr;
 }
 
-.our-team-cards__text {
+.card__text {
   margin-top: 1rem;
   font-weight: 600;
 }
+
+/* --------------------
+        FOOTER
+----------------------*/
+
+.main-footer {
+  margin-top: 3rem;
+  padding: 3em 0;
+  text-align: center;
+  font-family: sans-serif;
+  color: var(--bg-light-2);
+}
+
 /* --------------------
         LAYOUT
 ----------------------*/
 .container {
-  max-width: 1200px;
-  margin-right: auto;
+  max-width: 768px;
+  margin-left: auto;
   margin-right: auto;
 }
