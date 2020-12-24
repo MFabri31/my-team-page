@@ -54,10 +54,10 @@ img {
 
 .our-team-content__title {
   margin-bottom: 2rem;
-  margin: 0;
 }
 
 .our-team-content__subtitle {
+  margin-top: 1rem;
   margin-bottom: 1rem;
   font-weight: 600;
   text-transform: uppercase;
